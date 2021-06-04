@@ -1,0 +1,60 @@
+  UNIT                                   LOAD   ACTIVE SUB     DESCRIPTION
+  acpid.service                          loaded active running ACPI Event Daemon
+  amazon-ssm-agent.service               loaded active running amazon-ssm-agent
+  atd.service                            loaded active running Job spooling tools
+  auditd.service                         loaded active running Security Auditing Service
+  chronyd.service                        loaded active running NTP client/server
+  cloud-config.service                   loaded active exited  Apply the settings specified in cloud-config
+  cloud-final.service                    loaded active exited  Execute cloud user/final scripts
+  cloud-init-local.service               loaded active exited  Initial cloud-init job (pre-networking)
+  cloud-init.service                     loaded active exited  Initial cloud-init job (metadata service crawler)
+  crond.service                          loaded active running Command Scheduler
+  dbus.service                           loaded active running D-Bus System Message Bus
+  getty@tty1.service                     loaded active running Getty on tty1
+  gssproxy.service                       loaded active running GSSAPI Proxy Daemon
+[1;31m●[0m [1;31mhelloworld.service                    [0m loaded [1;31mfailed failed [0m Gunicorn instance for a simple hello world app
+  kmod-static-nodes.service              loaded active exited  Create list of required static device nodes for the current kernel
+  libstoragemgmt.service                 loaded active running libstoragemgmt plug-in server daemon
+  lvm2-lvmetad.service                   loaded active running LVM2 metadata daemon
+  lvm2-monitor.service                   loaded active exited  Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling
+  network.service                        loaded active running LSB: Bring up/down networking
+  postfix.service                        loaded active running Postfix Mail Transport Agent
+  rhel-autorelabel-mark.service          loaded active exited  Mark the need to relabel after reboot
+  rhel-dmesg.service                     loaded active exited  Dump dmesg to /var/log/dmesg
+  rhel-domainname.service                loaded active exited  Read and set NIS domainname from /etc/sysconfig/network
+  rhel-readonly.service                  loaded active exited  Configure read-only root support
+  rngd-wake-threshold.service            loaded active exited  Hardware RNG Entropy Gatherer Wake threshold service
+  rngd.service                           loaded active running Hardware RNG Entropy Gatherer Daemon
+  rpcbind.service                        loaded active running RPC bind service
+  rsyslog.service                        loaded active running System Logging Service
+  serial-getty@ttyS0.service             loaded active running Serial Getty on ttyS0
+  sshd.service                           loaded active running OpenSSH server daemon
+  sysstat.service                        loaded active exited  Resets System Activity Logs
+  systemd-fsck-root.service              loaded active exited  File System Check on Root Device
+  systemd-hwdb-update.service            loaded active exited  Rebuild Hardware Database
+  systemd-journal-catalog-update.service loaded active exited  Rebuild Journal Catalog
+  systemd-journal-flush.service          loaded active exited  Flush Journal to Persistent Storage
+  systemd-journald.service               loaded active running Journal Service
+  systemd-logind.service                 loaded active running Login Service
+  systemd-modules-load.service           loaded active exited  Load Kernel Modules
+  systemd-random-seed.service            loaded active exited  Load/Save Random Seed
+  systemd-remount-fs.service             loaded active exited  Remount Root and Kernel File Systems
+  systemd-sysctl.service                 loaded active exited  Apply Kernel Variables
+  systemd-tmpfiles-setup-dev.service     loaded active exited  Create Static Device Nodes in /dev
+  systemd-tmpfiles-setup.service         loaded active exited  Create Volatile Files and Directories
+  systemd-udev-settle.service            loaded active exited  udev Wait for Complete Device Initialization
+  systemd-udev-trigger.service           loaded active exited  udev Coldplug all Devices
+  systemd-udevd.service                  loaded active running udev Kernel Device Manager
+  systemd-update-done.service            loaded active exited  Update is Completed
+  systemd-update-utmp.service            loaded active exited  Update UTMP about System Boot/Shutdown
+  systemd-user-sessions.service          loaded active exited  Permit User Sessions
+  systemd-vconsole-setup.service         loaded active exited  Setup Virtual Console
+[1;31m●[0m [1;31mtest.service                          [0m loaded [1;31mfailed failed [0m Gunicorn instance for a simple hello world app
+  update-motd.service                    loaded active exited  Dynamically Generate Message Of The Day
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+
+[1;39m52 loaded units listed.[0m Pass --all to see loaded but inactive units, too.
+To show all installed unit files use 'systemctl list-unit-files'.
