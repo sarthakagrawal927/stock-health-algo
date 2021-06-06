@@ -80,7 +80,7 @@ def compute(stocks, stocks_qty,time_horizon_of_investment= 2):
         health_of_stock = rsi_health
         health_of_stock = round(health_of_stock, 2)
 
-        send_data.append({"name":stock, "quantity": stock_qty, "health": health_of_stock})
+        send_data.append({"name":stock.split(".",1)[0], "quantity": stock_qty, "health": health_of_stock})
 
         weight_of_all_stock = weight_of_all_stock + health_of_stock*invested_value
         total_amount_invested = total_amount_invested + invested_value

@@ -15,8 +15,10 @@ def makeData(stock_data, timeframe = 1):
     stocks=[]
     stocks_qty=[]
     for item in stock_data:
-        stocks.append(item)
-        stocks_qty.append(3)
+        print(item)
+        stocks.append(item['id'])
+        stocks_qty.append(int(item['quantity']))
+    print(stocks)
     return compute(stocks,stocks_qty,timeframe)
 
 # stocks,stock_qty = makeData(data)

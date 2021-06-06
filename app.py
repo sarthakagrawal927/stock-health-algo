@@ -11,8 +11,9 @@ CORS(app)
 def names():
 	user_json = request.get_json()
 	stocks_data = user_json.get('stocks')
-	timeframe = user_json.get('timeframe')
-	result = makeData(stocks_data,timeframe)
+	print(stocks_data)
+	# timeframe = user_json.get('timeframe')
+	result = makeData(stocks_data)
 	print(result)
 	return result
 
