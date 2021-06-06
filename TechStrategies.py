@@ -1,4 +1,4 @@
-import all_imports as ai
+import imports as ai
 
 
 def EMA(ema, closing_prices_array):
@@ -6,7 +6,6 @@ def EMA(ema, closing_prices_array):
     for i in range(1, len(closing_prices_array) - ema + 1):
         ema_array = ai.np.append(ema_array, (2/(ema+1))*(closing_prices_array[ema+i-1]-ema_array[i-1]) + ema_array[i-1])
     return ema_array
-
 
 
 def RSI(number_of_days, closing_prices_array):
