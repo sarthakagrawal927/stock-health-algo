@@ -11,10 +11,9 @@ CORS(app)
 def names():
 	user_json = request.get_json()
 	stocks_data = user_json.get('stocks')
-	print(stocks_data)
-	# timeframe = user_json.get('timeframe')
+	# print(stocks_data)
 	result = makeData(stocks_data)
-	print(result)
+	# print(result)
 	return result
 
 @app.route('/hi',methods=['GET','POST'])

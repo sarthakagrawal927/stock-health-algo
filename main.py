@@ -1,4 +1,4 @@
-from functions import get_rsi_days_factor,compute
+from functions import compute
 
 # taking input
 # time_horizon_of_investment = int(input("Enter 1 for long term, 2 for medium term, 3 for short terms: "))
@@ -15,10 +15,10 @@ def makeData(stock_data, timeframe = 1):
     stocks=[]
     stocks_qty=[]
     for item in stock_data:
-        print(item)
+        # print(item)
         stocks.append(item['id'])
         stocks_qty.append(int(item['quantity']))
-    print(stocks)
+    # print(stocks)
     return compute(stocks,stocks_qty,timeframe)
 
 # stocks,stock_qty = makeData(data)
