@@ -110,7 +110,7 @@ simplejson==3.17.2
 sip==6.1.0
 six==1.16.0
 soupsieve==2.2.1
-sqlparse==0.4.1
+sqlparse==0.4.2
 systemd-python==234
 terminator==1.92
 testresources==2.0.1
