@@ -114,7 +114,7 @@ sqlparse==0.4.2
 systemd-python==234
 terminator==1.92
 testresources==2.0.1
-thefuck==3.30
+thefuck==3.31
 TLPUI==1.4.0a0
 toml==0.10.2
 tqdm==4.61.0
